@@ -117,7 +117,7 @@
 }
 
 .feature-icon {
-  font-size: 4.5rem;
+  font-size: 6rem;
   margin-bottom: 25px;
   animation: bounce 3s ease-in-out infinite;
   filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.2));
@@ -354,7 +354,7 @@
   }
 
   .feature-icon {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
 
   .feature-title {
@@ -393,7 +393,7 @@
   }
 
   .feature-icon {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .feature-title {
