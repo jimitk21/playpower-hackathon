@@ -40,6 +40,9 @@ const ContactUs = ({ onClose }) => {
                   <div className="developer-avatar">🚀</div>
                   <h4>Jimit Karangia</h4>
                   <p className="developer-role">Senior Analyst, Capgemini</p>
+                  <p className="developer-qualification">
+                    🎓 B.Tech - PDEU (2025 passout)
+                  </p>
                   <div className="developer-links">
                     <a
                       href="mailto:jimitk191@gmail.com"
@@ -63,6 +66,9 @@ const ContactUs = ({ onClose }) => {
                   <h4>Meet Kathiriya</h4>
                   <p className="developer-role">
                     Full Stack Developer, Optimoz
+                  </p>
+                  <p className="developer-qualification">
+                    🎓 B.Tech - PDEU (2025 passout)
                   </p>
                   <div className="developer-links">
                     <a
