@@ -2,14 +2,14 @@
 
 import { useState, useEffect } from "react";
 import "./App.css";
-import Navigation from "./components/Navigation";
-import HeroSection from "./components/HeroSection";
-import GameWorldsSection from "./components/GameWorldsSection";
-import TestimonialsCarousel from "./components/TestimonialsCarousel";
-import ParentsTeachersSection from "./components/ParentsTeachersSection";
-import Footer from "./components/Footer";
-import MusicToggle from "./components/MusicToggle";
-import FloatingIslands from "./components/FloatingIslands";
+import Navigation from "./components/Navigation/Navigation";
+import HeroSection from "./components/HeroSection/HeroSection";
+import GameWorldsSection from "./components/GameWorldsSection/GameWorldsSection";
+import TestimonialsCarousel from "./components/TestimonialsCarousel/TestimonialsCarousel";
+import ParentsTeachersSection from "./components/ParentsTeacherSection/ParentsTeachersSection";
+import Footer from "./components/Footer/Footer";
+import MusicToggle from "./components/MusicToggle/MusicToggle";
+import FloatingIslands from "./components/FloatingIslands/FloatingIslands";
 
 function App() {
   const [scrollY, setScrollY] = useState(0);

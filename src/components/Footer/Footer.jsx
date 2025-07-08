@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import "./Footer.css";
-import TermsAndConditions from "./TermsAndConditions";
-import HelpSupport from "./HelpSupport";
-import ContactUs from "./ContactUs";
+import TermsAndConditions from "../TermsAndConditions/TermsAndConditions";
+import HelpSupport from "../HelpSupport/HelpSupport";
+import ContactUs from "../ContactUs/ContactUs";
 
 const Footer = ({
   onTermsOpen,

@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import "./MusicToggle.css";
-import landingPageMusic from "../assets/landingpagemusic.mp3";
+import landingPageMusic from "../../assets/landingpagemusic.mp3";
 
 const MusicToggle = () => {
   const [isPlaying, setIsPlaying] = useState(false);
