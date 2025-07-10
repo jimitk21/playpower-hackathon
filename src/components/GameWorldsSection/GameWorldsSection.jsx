@@ -3,7 +3,7 @@
 import { useState } from "react";
 import "./GameWorldsSection.css";
 
-const GameWorldsSection = () => {
+const GameWorldsSection = ({ onStartClockKingdom }) => {
   const [hoveredGame, setHoveredGame] = useState(null);
   const [selectedGame, setSelectedGame] = useState(null);
 
@@ -100,6 +100,14 @@ const GameWorldsSection = () => {
     },
   ];
 
+  const handleGameClick = (gameId) => {
+    if (gameId === "clock-kingdom" && onStartClockKingdom) {
+      onStartClockKingdom();
+    } else {
+      setSelectedGame(selectedGame === gameId ? null : gameId);
+    }
+  };
+
   return (
     <section id="games" className="game-worlds-section">
       <div className="section-header">
@@ -130,9 +138,7 @@ const GameWorldsSection = () => {
             }}
             onMouseEnter={() => setHoveredGame(game.id)}
             onMouseLeave={() => setHoveredGame(null)}
-            onClick={() =>
-              setSelectedGame(selectedGame === game.id ? null : game.id)
-            }
+            onClick={() => handleGameClick(game.id)}
           >
             <div className="island-background">
               <div className="background-emoji">{game.backgroundEmoji}</div>

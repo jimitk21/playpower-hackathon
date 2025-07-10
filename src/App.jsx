@@ -1,6 +1,12 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useNavigate,
+} from "react-router-dom";
 import "./App.css";
 import Navigation from "./components/Navigation/Navigation";
 import HeroSection from "./components/HeroSection/HeroSection";
@@ -10,12 +16,15 @@ import ParentsTeachersSection from "./components/ParentsTeacherSection/ParentsTe
 import Footer from "./components/Footer/Footer";
 import MusicToggle from "./components/MusicToggle/MusicToggle";
 import FloatingIslands from "./components/FloatingIslands/FloatingIslands";
+import ClockKingdom from "./components/ClockKingdomGame/ClockKingdomGame";
 
-function App() {
+// Landing Page Component
+const LandingPage = () => {
   const [scrollY, setScrollY] = useState(0);
   const [showTerms, setShowTerms] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const [showContact, setShowContact] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -47,6 +56,10 @@ function App() {
     setShowContact(false);
   };
 
+  const handleStartClockKingdom = () => {
+    navigate("/clock-kingdom");
+  };
+
   // Hide navigation when any modal is open
   const isAnyModalOpen = showTerms || showHelp || showContact;
 
@@ -56,7 +69,7 @@ function App() {
       {!isAnyModalOpen && <Navigation onHelpOpen={handleHelpOpen} />}
       <main className="main-content">
         <HeroSection scrollY={scrollY} />
-        <GameWorldsSection />
+        <GameWorldsSection onStartClockKingdom={handleStartClockKingdom} />
         <TestimonialsCarousel />
         <ParentsTeachersSection />
         <MusicToggle />
@@ -73,6 +86,29 @@ function App() {
         />
       </main>
     </div>
+  );
+};
+
+// Clock Kingdom Game Component
+const ClockKingdomGame = () => {
+  const navigate = useNavigate();
+
+  const handleExitGame = () => {
+    navigate("/");
+  };
+
+  return <ClockKingdom onExitGame={handleExitGame} />;
+};
+
+// Main App Component
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/clock-kingdom" element={<ClockKingdomGame />} />
+      </Routes>
+    </Router>
   );
 }
 
