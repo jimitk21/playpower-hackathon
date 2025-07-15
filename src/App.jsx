@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import {
   BrowserRouter as Router,
@@ -17,6 +16,7 @@ import Footer from "./components/Footer/Footer";
 import MusicToggle from "./components/MusicToggle/MusicToggle";
 import FloatingIslands from "./components/FloatingIslands/FloatingIslands";
 import ClockKingdom from "./components/ClockKingdomGame/ClockKingdomGame";
+import MathsRangersGame from "./components/MathsRangerGame/MathsRangersGame";
 
 // Landing Page Component
 const LandingPage = () => {
@@ -60,6 +60,10 @@ const LandingPage = () => {
     navigate("/clock-kingdom");
   };
 
+  const handleStartMathsRangers = () => {
+    navigate("/maths-rangers");
+  };
+
   // Hide navigation when any modal is open
   const isAnyModalOpen = showTerms || showHelp || showContact;
 
@@ -69,7 +73,10 @@ const LandingPage = () => {
       {!isAnyModalOpen && <Navigation onHelpOpen={handleHelpOpen} />}
       <main className="main-content">
         <HeroSection scrollY={scrollY} />
-        <GameWorldsSection onStartClockKingdom={handleStartClockKingdom} />
+        <GameWorldsSection
+          onStartClockKingdom={handleStartClockKingdom}
+          onStartMathsRangers={handleStartMathsRangers}
+        />
         <TestimonialsCarousel />
         <ParentsTeachersSection />
         <MusicToggle />
@@ -100,6 +107,17 @@ const ClockKingdomGame = () => {
   return <ClockKingdom onExitGame={handleExitGame} />;
 };
 
+// Math Rangers Game Component
+const MathsRangersGamePage = () => {
+  const navigate = useNavigate();
+
+  const handleExitGame = () => {
+    navigate("/");
+  };
+
+  return <MathsRangersGame onExitGame={handleExitGame} />;
+};
+
 // Main App Component
 function App() {
   return (
@@ -107,6 +125,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/clock-kingdom" element={<ClockKingdomGame />} />
+        <Route path="/maths-rangers" element={<MathsRangersGamePage />} />
       </Routes>
     </Router>
   );
