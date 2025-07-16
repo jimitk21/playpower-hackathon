@@ -48,8 +48,7 @@ const HelpSupport = ({ onClose }) => {
                 <div className="help-text">
                   <h4>Math Rangers</h4>
                   <p>
-                    Defeat math bandits in epic duels with addition,
-                    subtraction, and more!
+                    Defeat the AI Cars, Trucks and Vans to be Maths Sherif !!
                   </p>
                 </div>
               </div>
