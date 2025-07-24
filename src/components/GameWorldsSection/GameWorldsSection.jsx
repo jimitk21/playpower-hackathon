@@ -31,7 +31,7 @@ const GameWorldsSection = ({ onStartClockKingdom, onStartMathsRangers }) => {
       title: "Math Rangers",
       subtitle: "Wild West Math Duels",
       description:
-        " Boost ahead with correct answers, slow down with mistakes. Win the race and become the Math Sheriff!",
+        "Saddle up and defeat math bandits in epic cowboy duels that burst into confetti with every correct answer!",
       icon: "🤠",
       backgroundEmoji: "🏜️",
       features: [
