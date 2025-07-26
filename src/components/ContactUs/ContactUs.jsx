@@ -39,7 +39,7 @@ const ContactUs = ({ onClose }) => {
                 <div className="developer-card">
                   <div className="developer-avatar">🚀</div>
                   <h4>Jimit Karangia</h4>
-                  <p className="developer-role">Senior Analyst, Capgemini</p>
+                  <p className="developer-role">Analyst, Capgemini</p>
                   <p className="developer-qualification">
                     🎓 B.Tech - PDEU (2025 passout)
                   </p>

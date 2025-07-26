@@ -100,11 +100,11 @@ This project was built to demonstrate how learning can be transformed into a fun
 
 ## Creators
 
-- **Jimit Karangia** (Senior Analyst, Capgemini | PDEU'ICT-25 Passout)  
-  [LinkedIn](https://www.linkedin.com/in/jimit-karangia-7090062bb/) | jimitk191@gmail.com
+- **Jimit Karangia** (Analyst, Capgemini | PDEU'ICT-25 Passout)  
+  [LinkedIn](https://www.linkedin.com/in/jimit-karangia-7090062bb/) | jimitk191@gmail.com | jimit.kict21@sot.pdpu.ac.in | Discord: jimitkarangia
 
 - **Meet Kathiriya**(Finding Relevant Opportunities | PDEU'ICT-25 Passout)  
-  [LinkedIn](https://www.linkedin.com/in/meet-kathiriya-534318224/) | meetkathiriya596@gmail.com
+  [LinkedIn](https://www.linkedin.com/in/meet-kathiriya-534318224/) | meetkathiriya596@gmail.com | kathiriya.nict21@sot.pdpu.ac.in | Discord: morphs0849
 
 ---
 
